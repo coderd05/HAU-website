@@ -1,0 +1,380 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!doctype html>\
+<html lang="en">\
+<head>\
+  <meta charset="utf-8" />\
+  <meta name="viewport" content="width=device-width,initial-scale=1" />\
+  <title>BlueHope Foundation \'97 Empowering Communities</title>\
+  <meta name="description" content="BlueHope Foundation: community programs, volunteer opportunities, and donor-powered impact." />\
+  <link rel="icon" href="data:,">\
+  <style>\
+    /* Minimal modern blue theme */\
+    :root\{\
+      --bg:#f6fbff;\
+      --card:#ffffff;\
+      --primary:#0b6ef6; /* modern blue */\
+      --primary-600:#065ed6;\
+      --muted:#5b6b7a;\
+      --glass: rgba(11,110,246,0.08);\
+      --radius:14px;\
+      --container:1100px;\
+      --accent:#50b7ff;\
+      --shadow: 0 6px 20px rgba(12,35,64,0.06);\
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;\
+    \}\
+    *\{box-sizing:border-box\}\
+    html,body\{height:100%\}\
+    body\{\
+      margin:0;\
+      background:linear-gradient(180deg,var(--bg),#ffffff);\
+      color:#0b2033;\
+      -webkit-font-smoothing:antialiased;\
+      -moz-osx-font-smoothing:grayscale;\
+      line-height:1.45;\
+    \}\
+    .wrap\{max-width:var(--container);margin:0 auto;padding:36px;\}\
+    header\{\
+      position:sticky;top:0;background:rgba(255,255,255,0.8);backdrop-filter: blur(6px);z-index:40;\
+      border-bottom:1px solid rgba(10,20,30,0.04);\
+    \}\
+    .nav\{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;\}\
+    .brand\{display:flex;align-items:center;gap:12px;font-weight:700;font-size:18px;color:var(--primary);\}\
+    .brand .mark\{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;color:white;font-weight:800;box-shadow:var(--shadow)\}\
+    nav a\{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600;font-size:14px\}\
+    nav a:hover\{color:var(--primary)\}\
+    .hero\{\
+      display:grid;\
+      grid-template-columns:1fr 420px;\
+      gap:32px;\
+      align-items:center;\
+      padding:56px 20px;\
+    \}\
+    .hero-left h1\{font-size:34px;margin:0 0 12px\}\
+    .lead\{color:var(--muted);margin:0 0 20px\}\
+    .cta-row\{display:flex;gap:12px;align-items:center\}\
+    .btn\{\
+      background:var(--primary);\
+      color:white;border:none;padding:12px 16px;border-radius:10px;font-weight:700;cursor:pointer;font-size:15px;\
+      box-shadow: 0 8px 22px rgba(11,110,246,0.12);\
+    \}\
+    .btn.ghost\{background:transparent;color:var(--primary);border:1px solid rgba(11,110,246,0.12);box-shadow:none\}\
+    .card\{\
+      background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow);\
+    \}\
+    /* Money counter card */\
+    .counter\{\
+      text-align:center;padding:28px;border-radius:12px;background:linear-gradient(180deg,rgba(11,110,246,0.06),transparent);\
+      border:1px solid rgba(11,110,246,0.06);\
+    \}\
+    .counter h3\{margin:0;font-size:14px;color:var(--muted);font-weight:700\}\
+    .money\{font-size:30px;margin:8px 0;font-weight:800;color:var(--primary)\}\
+    .small\{font-size:13px;color:var(--muted)\}\
+    /* Sections */\
+    section\{padding:56px 20px\}\
+    .grid-3\{display:grid;grid-template-columns:repeat(3,1fr);gap:18px\}\
+    .service\{padding:18px;border-radius:10px;background:linear-gradient(180deg,#fff, #fbfdff);border:1px solid rgba(10,20,30,0.03)\}\
+    footer\{padding:32px 20px;background:transparent;border-top:1px solid rgba(10,20,30,0.04)\}\
+    .footer-row\{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap\}\
+    .muted\{color:var(--muted)\}\
+    /* Contact */\
+    .contact-grid\{display:grid;grid-template-columns:1fr 360px;gap:20px\}\
+    label\{display:block;font-weight:700;margin-bottom:6px;font-size:13px\}\
+    input,textarea\{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(10,20,30,0.06);background:white;font-size:14px\}\
+    textarea\{min-height:120px;resize:vertical\}\
+    /* Responsive */\
+    @media (max-width:950px)\{\
+      .hero\{grid-template-columns:1fr; padding:28px 12px\}\
+      .contact-grid\{grid-template-columns:1fr\}\
+      .grid-3\{grid-template-columns:1fr;gap:12px\}\
+      nav a\{display:none\}\
+    \}\
+    @media (max-width:480px)\{\
+      .brand\{font-size:16px\}\
+      .hero-left h1\{font-size:26px\}\
+      .money\{font-size:26px\}\
+    \}\
+    /* modal */\
+    .modal-backdrop\{position:fixed;inset:0;background:rgba(2,10,20,0.45);display:none;align-items:center;justify-content:center;z-index:80\}\
+    .modal\{width:360px;max-width:94%;background:white;padding:20px;border-radius:12px;box-shadow:0 20px 60px rgba(5,20,40,0.4)\}\
+    .row\{display:flex;gap:10px;align-items:center\}\
+    .muted-small\{font-size:13px;color:var(--muted)\}\
+    .sr-only\{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap\}\
+  </style>\
+</head>\
+<body>\
+  <header>\
+    <div class="wrap nav" role="banner">\
+      <div class="brand" aria-label="BlueHope Foundation">\
+        <div class="mark">BH</div>\
+        <div>\
+          BlueHope Foundation\
+          <div style="font-weight:500;font-size:12px;color:var(--muted)">Community-powered impact</div>\
+        </div>\
+      </div>\
+      <nav role="navigation" aria-label="Main">\
+        <a href="#home">Home</a>\
+        <a href="#about">About</a>\
+        <a href="#services">Programs</a>\
+        <a href="#contact">Contact</a>\
+      </nav>\
+    </div>\
+  </header>\
+\
+  <main id="home" class="wrap">\
+    <section class="hero card" aria-labelledby="hero-heading">\
+      <div class="hero-left">\
+        <h1 id="hero-heading">Empowering communities through education & support</h1>\
+        <p class="lead">BlueHope Foundation runs local programs that teach life skills, support families in need, and create sustainable opportunity. Join us \'97 every contribution counts.</p>\
+\
+        <div class="cta-row" style="margin-bottom:18px;">\
+          <button class="btn" id="donateBtn">Donate</button>\
+          <a class="btn ghost" href="#services">Our programs</a>\
+        </div>\
+\
+        <p class="small">Want to learn more or volunteer? Scroll down to About & Programs, or use the contact form to reach out.</p>\
+      </div>\
+\
+      <aside>\
+        <div class="card counter" aria-live="polite" aria-atomic="true">\
+          <h3>Total raised (local)</h3>\
+          <div class="money" id="moneyDisplay">$0</div>\
+          <div class="small muted-small">Private donations + local grants \'97 tracked in your browser (persisted locally)</div>\
+          <hr style="border:none;margin:12px 0;border-top:1px solid rgba(10,20,30,0.04)">\
+          <div style="display:flex;gap:8px;justify-content:center">\
+            <button class="btn" id="quick5">+ $5</button>\
+            <button class="btn" id="quick25">+ $25</button>\
+            <button class="btn ghost" id="resetBtn">Reset</button>\
+          </div>\
+        </div>\
+      </aside>\
+    </section>\
+  </main>\
+\
+  <section id="about" class="wrap" aria-labelledby="about-heading">\
+    <h2 id="about-heading">About BlueHope Foundation</h2>\
+    <p class="muted" style="max-width:760px">\
+      BlueHope Foundation is a volunteer-run nonprofit focused on neighborhood education, family support services, and local small-grant programs. We run after-school tutoring, skills workshops, and partner with local organizations to fund community micro-projects.\
+    </p>\
+    <div style="height:18px"></div>\
+    <div class="grid-3">\
+      <div class="service">\
+        <h4>After-school tutoring</h4>\
+        <p class="muted">Free tutoring sessions, materials, and mentorship for students K-12.</p>\
+      </div>\
+      <div class="service">\
+        <h4>Skills workshops</h4>\
+        <p class="muted">Career-readiness, digital skills, and financial literacy workshops for teens & adults.</p>\
+      </div>\
+      <div class="service">\
+        <h4>Community micro-grants</h4>\
+        <p class="muted">Small grants to support neighborhood-led projects \'97 gardens, libraries, and events.</p>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <section id="services" class="wrap" aria-labelledby="programs-heading">\
+    <h2 id="programs-heading">Programs & Services</h2>\
+    <p class="muted">Programs are run year-round. Below are examples \'97 reach out for partnerships and volunteer schedules.</p>\
+    <div style="height:14px"></div>\
+    <div class="grid-3">\
+      <div class="service">\
+        <strong>Mentor Match</strong>\
+        <p class="muted">Pairing youth with local mentors for weekly learning and guidance.</p>\
+      </div>\
+      <div class="service">\
+        <strong>Tech Access</strong>\
+        <p class="muted">Loaner laptops and guided classes for digital inclusion.</p>\
+      </div>\
+      <div class="service">\
+        <strong>Emergency Support</strong>\
+        <p class="muted">Short-term support for families facing urgent needs.</p>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <section id="contact" class="wrap" aria-labelledby="contact-heading">\
+    <h2 id="contact-heading">Contact</h2>\
+    <div class="contact-grid">\
+      <div>\
+        <p class="muted">Have questions, want to volunteer, or propose a partnership? Send us a message and we'll reply within a few business days.</p>\
+\
+        <form id="contactForm" class="card" onsubmit="handleContact(event)">\
+          <div style="display:grid;gap:12px">\
+            <div>\
+              <label for="name">Name</label>\
+              <input id="name" name="name" required placeholder="Your full name">\
+            </div>\
+            <div>\
+              <label for="email">Email</label>\
+              <input id="email" name="email" type="email" required placeholder="you@example.com">\
+            </div>\
+            <div>\
+              <label for="message">Message</label>\
+              <textarea id="message" name="message" required placeholder="How can we help?"></textarea>\
+            </div>\
+            <div style="display:flex;gap:10px;align-items:center">\
+              <button class="btn" type="submit">Send</button>\
+              <div class="muted-small">Or email <a href="mailto:info@bluehope.org">info@bluehope.org</a></div>\
+            </div>\
+          </div>\
+        </form>\
+      </div>\
+\
+      <aside class="card">\
+        <h4>Quick info</h4>\
+        <p class="muted-small"><strong>Address:</strong> 123 Community Way, Your City</p>\
+        <p class="muted-small"><strong>Phone:</strong> (555) 123-4567</p>\
+        <p class="muted-small"><strong>Email:</strong> info@bluehope.org</p>\
+        <div style="height:12px"></div>\
+        <div>\
+          <strong>Volunteer</strong>\
+          <p class="muted-small">We host weekend volunteer orientations. Sign up via the contact form.</p>\
+        </div>\
+      </aside>\
+    </div>\
+  </section>\
+\
+  <footer class="wrap">\
+    <div class="footer-row">\
+      <div class="muted">\'a9 <span id="year"></span> BlueHope Foundation \'97 All rights reserved</div>\
+      <div class="muted">Made with \uc0\u10084 \u65039  \'97 Minimal nonprofit template</div>\
+    </div>\
+  </footer>\
+\
+  <!-- Modal for donate -->\
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">\
+    <div class="modal" role="document" aria-labelledby="donateTitle">\
+      <h3 id="donateTitle">Make a donation</h3>\
+      <p class="muted-small">This demo stores donations locally in your browser (no real payments). Use the input below to simulate a donation and watch the counter animate.</p>\
+      <div style="height:8px"></div>\
+      <div class="row">\
+        <label class="sr-only" for="amount">Amount</label>\
+        <input id="amount" type="number" min="1" step="1" placeholder="Enter USD amount">\
+      </div>\
+      <div style="height:12px"></div>\
+      <div style="display:flex;gap:10px;justify-content:flex-end">\
+        <button class="btn ghost" id="closeModal">Cancel</button>\
+        <button class="btn" id="confirmDonate">Donate</button>\
+      </div>\
+    </div>\
+  </div>\
+\
+  <script>\
+    // Accessible small helpers\
+    document.getElementById('year').textContent = new Date().getFullYear();\
+\
+    // Money counter logic (client-side, persisted to localStorage)\
+    const key = 'bluehope_total_local';\
+    const moneyDisplay = document.getElementById('moneyDisplay');\
+    const modal = document.getElementById('modalBackdrop');\
+    const amountInput = document.getElementById('amount');\
+\
+    // Formatting\
+    function fmt(n)\{ return new Intl.NumberFormat('en-US', \{style:'currency', currency:'USD', maximumFractionDigits:0\}).format(Math.round(n)); \}\
+\
+    function getStored()\{\
+      const raw = localStorage.getItem(key);\
+      return raw ? Number(raw) : 0;\
+    \}\
+    function setStored(v)\{\
+      localStorage.setItem(key, String(Math.max(0, Math.round(v))));\
+    \}\
+\
+    // Animate counter from current displayed to target\
+    let animFrame = null;\
+    function animateTo(target)\{\
+      cancelAnimationFrame(animFrame);\
+      const start = Number(moneyDisplay.dataset.value || getStored() || 0);\
+      const end = Math.max(0, Math.round(target));\
+      const duration = 700;\
+      const startTime = performance.now();\
+      function step(now)\{\
+        const t = Math.min(1, (now - startTime) / duration);\
+        const ease = t<0.5?2*t*t: -1 + (4 - 2*t)*t; // smooth-ish\
+        const val = Math.round(start + (end - start) * ease);\
+        moneyDisplay.textContent = fmt(val);\
+        moneyDisplay.dataset.value = val;\
+        if(t < 1) animFrame = requestAnimationFrame(step);\
+      \}\
+      animFrame = requestAnimationFrame(step);\
+    \}\
+\
+    // Initialize display\
+    animateTo(getStored());\
+\
+    // Quick buttons\
+    document.getElementById('quick5').addEventListener('click', ()=> addAmount(5));\
+    document.getElementById('quick25').addEventListener('click', ()=> addAmount(25));\
+    document.getElementById('resetBtn').addEventListener('click', ()=> \{\
+      if(confirm('Reset the local counter to $0? This only affects your browser.')) \{\
+        setStored(0);\
+        animateTo(0);\
+      \}\
+    \});\
+\
+    // Modal show/hide\
+    document.getElementById('donateBtn').addEventListener('click', () => openModal());\
+    document.getElementById('closeModal').addEventListener('click', () => closeModal());\
+    document.getElementById('modalBackdrop').addEventListener('click', (e)=>\{ if(e.target===modal) closeModal(); \});\
+    document.addEventListener('keydown', (e)=>\{ if(e.key==='Escape') closeModal(); \});\
+\
+    function openModal()\{\
+      modal.style.display = 'flex'; modal.setAttribute('aria-hidden','false');\
+      amountInput.value = '';\
+      setTimeout(()=> amountInput.focus(), 120);\
+    \}\
+    function closeModal()\{\
+      modal.style.display = 'none'; modal.setAttribute('aria-hidden','true');\
+    \}\
+\
+    function addAmount(n)\{\
+      const current = getStored();\
+      const next = Math.round(current + n);\
+      setStored(next);\
+      animateTo(next);\
+    \}\
+\
+    document.getElementById('confirmDonate').addEventListener('click', ()=>\{\
+      const v = Number(amountInput.value || 0);\
+      if(!v || v <= 0)\{ alert('Please enter a valid amount (USD).'); amountInput.focus(); return; \}\
+      addAmount(v);\
+      closeModal();\
+      // Friendly feedback: temporary inline message\
+      const original = document.getElementById('donateBtn').textContent;\
+      document.getElementById('donateBtn').textContent = 'Thanks!';\
+      setTimeout(()=> document.getElementById('donateBtn').textContent = original, 1500);\
+    \});\
+\
+    // Contact form (demo; no backend)\
+    function handleContact(e)\{\
+      e.preventDefault();\
+      const name = e.target.name.value.trim();\
+      const email = e.target.email.value.trim();\
+      const message = e.target.message.value.trim();\
+      if(!name||!email||!message)\{ alert('Please complete the form.'); return; \}\
+      // In a real site, you'd POST this to your backend or use a service (Formspree, Google Forms, Netlify Forms).\
+      alert('Thank you, ' + name + '! This demo doesn\\\\'t send messages \'97 it shows how the form would behave. Replace handleContact() with your form backend endpoint to enable messaging.');\
+      e.target.reset();\
+    \}\
+\
+    // Smooth scroll for nav anchors\
+    document.querySelectorAll('a[href^="#"]').forEach(a=>\{\
+      a.addEventListener('click', (e)=>\{\
+        const id = a.getAttribute('href').slice(1);\
+        const el = document.getElementById(id);\
+        if(el)\{\
+          e.preventDefault();\
+          el.scrollIntoView(\{behavior:'smooth', block:'start'\});\
+        \}\
+      \});\
+    \});\
+  </script>\
+</body>\
+</html>\
+}
